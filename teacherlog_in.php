@@ -15,9 +15,15 @@
         $count = mysqli_num_rows($result);  
           
         if($count == 1){  
-            echo "<h1><center> Login successful </center></h1>";  
+            echo '<script type="text/JavaScript"> 
+            alert("Login Successful");
+            window.location.href="https://www.w3schools.com/js/js_popup.asp";
+            </script>';  
         }  
         else{  
-            echo "<h1> Login failed. Invalid username or password.</h1>";  
+            echo '<script type="text/JavaScript"> 
+            alert("Invalid E-mail or Password");
+            window.location.href="index.php";
+            </script>';  
         }     
 ?>
